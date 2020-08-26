@@ -2,3 +2,8 @@
 # (try doing the same thing in the JS console and see what it outputs)
 
 # YOUR CODE HERE
+print(pow(2, 65536))
+
+#in the JS console:
+#2**65536
+#Infinity
