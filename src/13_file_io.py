@@ -8,8 +8,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Open up the "foo.txt" file (which already exists) for reading
 # Print all the contents of the file, then close the file
 # Note: pay close attention to your current directory when trying to open "foo.txt"
-
 # YOUR CODE HERE
+f = open('foo.txt', 'r')
+print(f.read())
+f.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +19,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+test_text = "f.write(string) writes the contents of string to the file,\nreturning the number of characters written.\nOther types of objects need to be converted to a string before writing them\n"
+bar_file = open('bar.txt', 'w')
+bar_file.write(test_text)
+bar_file.close()
+with open('bar.txt') as bf:
+    bar_data = bf.read()
+print(bar_data)
