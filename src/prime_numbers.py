@@ -1,4 +1,4 @@
-your_number = int(input("Enter an integer number, and I will show you all prime number from 2 to this number: "))
+your_number = int(input("Enter an integer number: "))
 
 
 def is_prime(num):
