@@ -21,6 +21,8 @@ else:
 
 
 
+
+
             
        
 
@@ -30,6 +32,5 @@ else:
 
         
 
-# for index, element in enumerate(bool_list):
-#     print(f"index {index} number {element}")
+
 

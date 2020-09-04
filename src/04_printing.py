@@ -16,6 +16,7 @@ print("x is %(x)d, y is %(y).5f, z is \"%(z)s\"" % {"x":x, "y":y, "z":z})
 
 # Use the 'format' string method to print the same thing
 print("x is {x}, y is {y}, z is \"{z}\"".format(x=x, y=y, z=z))
+print("x is {}, y is {:.5f}, z is \"{}\"".format(x, y, z))
 
 # Finally, print the same thing using an f-string
 print(f"x is {x}, y is {y}, z is \"{z}\"")

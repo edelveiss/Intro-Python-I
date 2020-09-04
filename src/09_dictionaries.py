@@ -57,15 +57,20 @@ print(waypoints)
 
 # # Write a loop that prints out all the field values for all the waypoints
 # # YOUR CODE HERE
-
+print("----enumerate-----")
 for key, values in enumerate(waypoints):
     print(values)
-
+print("----[print(v) for k,v in i.items()]-----")
 for  i in waypoints:
     [print(v) for k,v in i.items()]
-
+    
+print("----print(i.values())-----")
 for i in waypoints:
     print(i.values())
+    
+print("----print(', '.join(f'' for k, v in way.items()))-----")
+for way in waypoints:
+    print(', '.join(f'{k}: {v}' for k, v in way.items()))
 
 
 
